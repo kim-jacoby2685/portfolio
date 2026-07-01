@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kim Jacoby — UX Designer, Accessibility Specialist, and HCI Graduate Student. Portfolio showcasing accessible design, AI, and front-end development projects.">
+  <title>Kim Jacoby | UX Designer &amp; Accessibility Specialist</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-logo" href="index.html">Kim Jacoby</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open navigation menu">
+        Menu
+      </button>
+      <nav class="site-nav" id="primary-navigation" aria-label="Primary">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="accessibility.html">Accessibility Statement</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero-content">
+        <h1 id="hero-heading">Designing Accessible and User-Centered Digital Experiences</h1>
+        <p class="tagline">UX Designer, Accessibility Specialist, and HCI Graduate Student</p>
+        <p>
+          Hello, I'm Kim Jacoby, a Principal User Experience Designer and accessibility specialist
+          currently pursuing a Master's degree in Human-Computer Interaction at Iowa State University.
+        </p>
+        <p>
+          I have more than 15 years of experience creating inclusive digital experiences. My work
+          focuses on accessibility, UX design, content strategy, and helping organizations create
+          digital products that are usable by everyone.
+        </p>
+        <p>
+          This portfolio highlights projects from my HCI coursework and demonstrates my skills in
+          accessibility, UX design, artificial intelligence, and front-end development.
+        </p>
+        <div class="btn-group">
+          <a class="btn btn-primary" href="#featured-projects">View My Work</a>
+          <a class="btn btn-secondary" href="contact.html">Get in Touch</a>
+        </div>
+      </div>
+      <img
+        class="hero-image"
+        src="images/hero-illustration.svg"
+        alt="Abstract illustration of a design workspace with wireframes, color swatches, and accessibility symbols"
+        width="600"
+        height="400"
+      >
+    </section>
+
+    <section id="featured-projects" aria-labelledby="projects-heading">
+      <h2 id="projects-heading" class="section-heading">Featured Projects</h2>
+      <ul class="project-grid">
+        <li class="project-card">
+          <img
+            class="project-card__image"
+            src="images/project-parks.svg"
+            alt="Preview of the Accessible Parks Search interface showing a map with park markers"
+            width="640"
+            height="360"
+          >
+          <div class="project-card__body">
+            <h3 class="project-card__title">Accessible Parks Search for Iowa</h3>
+            <ul class="project-card__tags" aria-label="Project tags">
+              <li><span class="tag">UX Research</span></li>
+              <li><span class="tag">WCAG 2.2</span></li>
+              <li><span class="tag">Mapping</span></li>
+            </ul>
+            <p>A searchable directory of Iowa state parks with detailed accessibility information for visitors with mobility, vision, and hearing needs.</p>
+            <a class="project-card__link" href="projects/accessible-parks.html">Read Case Study: Accessible Parks Search for Iowa</a>
+          </div>
+        </li>
+        <li class="project-card">
+          <img
+            class="project-card__image"
+            src="images/project-recipe.svg"
+            alt="Preview of the AI Recipe Search interface with ingredient input and recipe cards"
+            width="640"
+            height="360"
+          >
+          <div class="project-card__body">
+            <h3 class="project-card__title">AI Recipe Search</h3>
+            <ul class="project-card__tags" aria-label="Project tags">
+              <li><span class="tag">AI/ML</span></li>
+              <li><span class="tag">Interaction Design</span></li>
+              <li><span class="tag">Accessibility</span></li>
+            </ul>
+            <p>An ingredient-based recipe finder powered by AI, designed with clear feedback, keyboard support, and screen reader compatibility.</p>
+            <a class="project-card__link" href="projects/recipe-search.html">Read Case Study: AI Recipe Search</a>
+          </div>
+        </li>
+        <li class="project-card">
+          <img
+            class="project-card__image"
+            src="images/project-sports.svg"
+            alt="Preview of the Youth Sports Team Manager dashboard with roster and schedule"
+            width="640"
+            height="360"
+          >
+          <div class="project-card__body">
+            <h3 class="project-card__title">Youth Sports Team Manager</h3>
+            <ul class="project-card__tags" aria-label="Project tags">
+              <li><span class="tag">Mobile-first</span></li>
+              <li><span class="tag">Community</span></li>
+              <li><span class="tag">Inclusive Design</span></li>
+            </ul>
+            <p>A team management tool for volunteer coaches and parents, built for quick communication and easy scheduling on any device.</p>
+            <a class="project-card__link" href="projects/sports-manager.html">Read Case Study: Youth Sports Team Manager</a>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section id="accessibility-commitment" aria-labelledby="accessibility-commitment-heading">
+      <h2 id="accessibility-commitment-heading" class="section-heading">Accessibility Commitment</h2>
+      <p>
+        This portfolio was designed and developed to meet WCAG 2.2 AA standards and demonstrates
+        accessibility best practices including semantic HTML, keyboard accessibility, responsive design,
+        and accessible navigation.
+      </p>
+      <p>
+        <a href="accessibility.html">Read the Full Accessibility Statement</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <nav class="footer-nav" aria-label="Footer">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="accessibility.html">Accessibility Statement</a></li>
+        </ul>
+      </nav>
+      <p class="footer-copy">&copy; 2026 Kim Jacoby. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

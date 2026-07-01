@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About Kim Jacoby — Principal UX Designer, accessibility specialist, and HCI graduate student at Iowa State University.">
+  <title>About Me | Kim Jacoby</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-logo" href="index.html">Kim Jacoby</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open navigation menu">
+        Menu
+      </button>
+      <nav class="site-nav" id="primary-navigation" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" aria-current="page">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="accessibility.html">Accessibility Statement</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+    <h1>About Me</h1>
+
+    <div class="about-layout">
+      <img
+        class="about-photo"
+        src="images/profile.svg"
+        alt="Portrait of Kim Jacoby"
+        width="200"
+        height="200"
+      >
+      <div>
+        <p>
+          Hi, I'm Kim Jacoby, a UX designer and accessibility specialist with a passion for creating
+          inclusive digital experiences.
+        </p>
+        <p>
+          I currently work as a Principal User Experience Designer and am pursuing a Master's degree
+          in Human-Computer Interaction at Iowa State University.
+        </p>
+      </div>
+    </div>
+
+    <section class="content-section" aria-labelledby="background-heading">
+      <h2 id="background-heading">My Background Includes</h2>
+      <ul>
+        <li>User experience design</li>
+        <li>Digital accessibility</li>
+        <li>Content strategy</li>
+        <li>Accessible document development</li>
+        <li>User research</li>
+        <li>Front-end web development</li>
+      </ul>
+      <p>
+        I enjoy solving complex problems and creating experiences that are intuitive, useful, and
+        accessible to everyone.
+      </p>
+    </section>
+
+    <p>
+      <a class="btn btn-primary" href="contact.html">Get in Touch</a>
+    </p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <nav class="footer-nav" aria-label="Footer">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="accessibility.html">Accessibility Statement</a></li>
+        </ul>
+      </nav>
+      <p class="footer-copy">&copy; 2026 Kim Jacoby. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

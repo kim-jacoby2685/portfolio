@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Accessibility statement for the Kim Jacoby portfolio website. WCAG 2.2 AA commitment, features, limitations, and feedback contact.">
+  <title>Accessibility Statement | Kim Jacoby</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-logo" href="index.html">Kim Jacoby</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open navigation menu">
+        Menu
+      </button>
+      <nav class="site-nav" id="primary-navigation" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="accessibility.html" aria-current="page">Accessibility Statement</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+    <h1>Accessibility Statement</h1>
+
+    <p>
+      I am committed to ensuring this portfolio is accessible to people with disabilities.
+      Accessibility is a core requirement of this site — not an afterthought — and reflects my work
+      as a UX designer and accessibility specialist.
+    </p>
+
+    <nav class="toc" aria-labelledby="toc-heading">
+      <h2 id="toc-heading">On This Page</h2>
+      <ol>
+        <li><a href="#commitment">Commitment to Accessibility</a></li>
+        <li><a href="#conformance-goal">Conformance Goal</a></li>
+        <li><a href="#features">Accessibility Features</a></li>
+        <li><a href="#keyboard">Keyboard Navigation</a></li>
+        <li><a href="#responsive">Responsive Design</a></li>
+        <li><a href="#screen-readers">Screen Reader Compatibility</a></li>
+        <li><a href="#limitations">Known Limitations</a></li>
+        <li><a href="#feedback">Accessibility Feedback</a></li>
+        <li><a href="#reviewed">Date Last Reviewed</a></li>
+      </ol>
+    </nav>
+
+    <section id="commitment" class="content-section" aria-labelledby="commitment-heading">
+      <h2 id="commitment-heading">Commitment to Accessibility</h2>
+      <p>
+        I believe everyone should be able to access and use the web, regardless of ability. This
+        portfolio was designed and built to demonstrate inclusive design practices and to provide
+        an accessible experience for all visitors.
+      </p>
+      <p>
+        I continually review and improve this site to address accessibility barriers and to stay
+        current with evolving standards and best practices.
+      </p>
+    </section>
+
+    <section id="conformance-goal" class="content-section" aria-labelledby="conformance-goal-heading">
+      <h2 id="conformance-goal-heading">Conformance Goal</h2>
+      <p>
+        The goal of this portfolio is to meet <strong>Web Content Accessibility Guidelines (WCAG) 2.2
+        Level AA</strong> standards. WCAG defines requirements for making web content more accessible
+        to people with disabilities across three levels of conformance: Level A, Level AA, and Level AAA.
+      </p>
+      <p>
+        Level AA is widely recognized as the standard for accessible public-facing websites and is
+        the target for this portfolio.
+      </p>
+    </section>
+
+    <section id="features" class="content-section" aria-labelledby="features-heading">
+      <h2 id="features-heading">Accessibility Features</h2>
+      <p>This portfolio includes the following accessibility features:</p>
+      <ul>
+        <li>Semantic HTML5 structure with landmark regions (header, navigation, main, footer)</li>
+        <li>One level 1 heading per page with a logical heading hierarchy</li>
+        <li>Skip to main content link with programmatic focus support</li>
+        <li>Scroll padding so focused elements are not hidden behind the sticky header</li>
+        <li>Visible focus indicators that meet WCAG 2.2 Focus Appearance requirements</li>
+        <li>Meaningful alternative text for informative images</li>
+        <li>Sufficient color contrast for text and interactive elements</li>
+        <li>Links distinguishable by underline, not color alone</li>
+        <li>Descriptive link text that identifies the purpose of each link</li>
+        <li>Language attribute set on the HTML element</li>
+        <li>Unique and descriptive page titles</li>
+        <li>Support for reduced motion via <code>prefers-reduced-motion</code></li>
+        <li>Support for high contrast mode via <code>forced-colors</code></li>
+        <li>Limited ARIA usage — native HTML elements are preferred</li>
+      </ul>
+    </section>
+
+    <section id="keyboard" class="content-section" aria-labelledby="keyboard-heading">
+      <h2 id="keyboard-heading">Keyboard Navigation</h2>
+      <p>
+        All functionality on this portfolio is available using a keyboard. You can navigate between
+        links and buttons using <kbd>Tab</kbd> and <kbd>Shift</kbd> + <kbd>Tab</kbd>.
+        Interactive elements can be activated with <kbd>Enter</kbd> or <kbd>Space</kbd>.
+      </p>
+      <p>Keyboard navigation support includes:</p>
+      <ul>
+        <li>Logical tab order that follows the visual layout</li>
+        <li>Visible focus indicators on all interactive elements</li>
+        <li>Skip to main content link as the first focusable element on every page</li>
+        <li>Mobile navigation menu operable by keyboard, with <kbd>Escape</kbd> to close</li>
+        <li>No keyboard traps — focus can always be moved away from any component</li>
+      </ul>
+    </section>
+
+    <section id="responsive" class="content-section" aria-labelledby="responsive-heading">
+      <h2 id="responsive-heading">Responsive Design</h2>
+      <p>
+        This portfolio uses a responsive layout that adapts to different screen sizes, orientations,
+        and zoom levels. Content reflows without requiring horizontal scrolling at viewport widths
+        as narrow as 320 pixels and supports browser zoom up to 400%.
+      </p>
+      <p>Responsive design support includes:</p>
+      <ul>
+        <li>Flexible layouts using CSS Grid and Flexbox</li>
+        <li>Scalable text and images that resize with the viewport</li>
+        <li>A collapsible navigation menu on smaller screens</li>
+        <li>Touch-friendly target sizes for navigation controls on mobile devices</li>
+      </ul>
+    </section>
+
+    <section id="screen-readers" class="content-section" aria-labelledby="screen-readers-heading">
+      <h2 id="screen-readers-heading">Screen Reader Compatibility</h2>
+      <p>
+        This portfolio is designed to be compatible with screen readers and other assistive
+        technologies. Semantic HTML provides structure and meaning that assistive technologies
+        can interpret and convey to users.
+      </p>
+      <p>Screen reader compatibility features include:</p>
+      <ul>
+        <li>Landmark regions for quick navigation between page areas</li>
+        <li>Descriptive headings that summarize each section</li>
+        <li>Current page indication in navigation using <code>aria-current="page"</code></li>
+        <li>Expanded/collapsed state announced on the mobile menu button via <code>aria-expanded</code></li>
+      </ul>
+      <p>
+        This site has been tested with screen reader navigation patterns using landmark
+        navigation, heading navigation, and link interaction workflows.
+      </p>
+    </section>
+
+    <section id="limitations" class="content-section" aria-labelledby="limitations-heading">
+      <h2 id="limitations-heading">Known Limitations</h2>
+      <p>
+        Despite my efforts to ensure full accessibility, some limitations may exist. Known limitations
+        will be documented here as they are identified:
+      </p>
+      <ul>
+        <li>
+          <strong>Placeholder content:</strong> Project screenshots, live demo links, and GitHub
+          repository links are placeholders and will be updated when final project assets are available.
+        </li>
+        <li>
+          <strong>Additional limitations:</strong> [Known limitations placeholder — document any
+          identified accessibility issues here as the site is reviewed and updated.]
+        </li>
+      </ul>
+    </section>
+
+    <section id="feedback" class="content-section" aria-labelledby="feedback-heading">
+      <h2 id="feedback-heading">Accessibility Feedback</h2>
+      <p>
+        I welcome your feedback on the accessibility of this portfolio. If you encounter accessibility
+        barriers or have suggestions for improvement, please contact me:
+      </p>
+      <dl class="contact-list">
+        <dt>Email</dt>
+        <dd>
+          <a href="mailto:kimberly.e.jacoby@gmail.com">kimberly.e.jacoby@gmail.com</a>
+        </dd>
+        <dt>Contact page</dt>
+        <dd>
+          <a href="contact.html">Contact Page</a>
+        </dd>
+      </dl>
+      <p>
+        I aim to respond to accessibility feedback within 3 business days.
+      </p>
+    </section>
+
+    <section id="reviewed" class="content-section" aria-labelledby="reviewed-heading">
+      <h2 id="reviewed-heading">Date Last Reviewed</h2>
+      <p>
+        This accessibility statement was last reviewed on
+        <time datetime="2026-06-30">June 30, 2026</time>.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <nav class="footer-nav" aria-label="Footer">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="accessibility.html">Accessibility Statement</a></li>
+        </ul>
+      </nav>
+      <p class="footer-copy">&copy; 2026 Kim Jacoby. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

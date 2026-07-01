@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="sports-title sports-desc">
+  <title id="sports-title">Youth Sports Team Manager project preview</title>
+  <desc id="sports-desc">Illustration of a team management dashboard with roster, schedule, and communication features for youth sports.</desc>
+  <rect width="640" height="360" fill="#e8f0fe"/>
+  <rect x="20" y="20" width="600" height="320" rx="8" fill="#ffffff" stroke="#005fcc" stroke-width="2"/>
+  <rect x="40" y="40" width="160" height="24" rx="4" fill="#005fcc"/>
+  <text x="55" y="57" font-family="sans-serif" font-size="13" fill="white" font-weight="bold">Team Manager</text>
+  <rect x="40" y="80" width="180" height="240" rx="6" fill="#e8f0fe" stroke="#005fcc" stroke-width="1"/>
+  <text x="55" y="105" font-family="sans-serif" font-size="11" fill="#005fcc" font-weight="bold">Roster</text>
+  <circle cx="70" cy="130" r="14" fill="#0d5c63"/>
+  <rect x="95" y="122" width="100" height="8" rx="2" fill="#3d3d56" opacity="0.5"/>
+  <circle cx="70" cy="165" r="14" fill="#c45c26"/>
+  <rect x="95" y="157" width="80" height="8" rx="2" fill="#3d3d56" opacity="0.5"/>
+  <circle cx="70" cy="200" r="14" fill="#1b6b3a"/>
+  <rect x="95" y="192" width="90" height="8" rx="2" fill="#3d3d56" opacity="0.5"/>
+  <rect x="240" y="80" width="380" height="110" rx="6" fill="#e8f0fe" stroke="#005fcc" stroke-width="1"/>
+  <text x="255" y="105" font-family="sans-serif" font-size="11" fill="#005fcc" font-weight="bold">Upcoming Games</text>
+  <rect x="255" y="115" width="340" height="30" rx="4" fill="#ffffff" stroke="#c8c8d4" stroke-width="1"/>
+  <text x="265" y="135" font-family="sans-serif" font-size="10" fill="#3d3d56">Sat Jun 15 - vs. Hawks - 10:00 AM</text>
+  <rect x="255" y="155" width="340" height="30" rx="4" fill="#ffffff" stroke="#c8c8d4" stroke-width="1"/>
+  <text x="265" y="175" font-family="sans-serif" font-size="10" fill="#3d3d56">Sat Jun 22 - vs. Eagles - 2:00 PM</text>
+  <rect x="240" y="210" width="380" height="110" rx="6" fill="#e8f0fe" stroke="#005fcc" stroke-width="1"/>
+  <text x="255" y="235" font-family="sans-serif" font-size="11" fill="#005fcc" font-weight="bold">Announcements</text>
+  <rect x="255" y="250" width="340" height="8" rx="2" fill="#3d3d56" opacity="0.4"/>
+  <rect x="255" y="268" width="280" height="8" rx="2" fill="#3d3d56" opacity="0.3"/>
+  <rect x="255" y="286" width="200" height="8" rx="2" fill="#3d3d56" opacity="0.3"/>
+</svg>

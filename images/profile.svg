@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-labelledby="profile-title profile-desc">
+  <title id="profile-title">Portrait of Kim Jacoby</title>
+  <desc id="profile-desc">Stylized avatar with initials KJ on a teal background.</desc>
+  <circle cx="100" cy="100" r="100" fill="#0d5c63"/>
+  <circle cx="100" cy="85" r="40" fill="#fafafa"/>
+  <ellipse cx="100" cy="175" rx="55" ry="45" fill="#fafafa"/>
+  <text x="100" y="108" text-anchor="middle" font-family="sans-serif" font-size="28" fill="#0d5c63" font-weight="bold">KJ</text>
+</svg>

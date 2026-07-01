@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="recipe-title recipe-desc">
+  <title id="recipe-title">AI Recipe Search project preview</title>
+  <desc id="recipe-desc">Illustration of a recipe search interface with ingredient input and AI-generated recipe suggestions.</desc>
+  <rect width="640" height="360" fill="#fef3e8"/>
+  <rect x="20" y="20" width="600" height="320" rx="8" fill="#ffffff" stroke="#c45c26" stroke-width="2"/>
+  <rect x="40" y="40" width="200" height="24" rx="4" fill="#c45c26"/>
+  <text x="55" y="57" font-family="sans-serif" font-size="13" fill="white" font-weight="bold">AI Recipe Search</text>
+  <rect x="40" y="80" width="560" height="40" rx="6" fill="#fafafa" stroke="#c8c8d4" stroke-width="2"/>
+  <text x="55" y="105" font-family="sans-serif" font-size="12" fill="#3d3d56">chicken, rice, broccoli, garlic...</text>
+  <rect x="40" y="140" width="270" height="180" rx="6" fill="#fef3e8" stroke="#c45c26" stroke-width="1"/>
+  <rect x="60" y="160" width="180" height="12" rx="2" fill="#c45c26"/>
+  <rect x="60" y="182" width="140" height="8" rx="2" fill="#3d3d56" opacity="0.4"/>
+  <rect x="60" y="198" width="160" height="8" rx="2" fill="#3d3d56" opacity="0.3"/>
+  <rect x="60" y="220" width="80" height="20" rx="4" fill="#c45c26" opacity="0.2"/>
+  <text x="68" y="234" font-family="sans-serif" font-size="9" fill="#9a4719">30 min</text>
+  <rect x="330" y="140" width="270" height="180" rx="6" fill="#fef3e8" stroke="#c45c26" stroke-width="1"/>
+  <rect x="350" y="160" width="180" height="12" rx="2" fill="#c45c26"/>
+  <rect x="350" y="182" width="140" height="8" rx="2" fill="#3d3d56" opacity="0.4"/>
+  <rect x="350" y="198" width="160" height="8" rx="2" fill="#3d3d56" opacity="0.3"/>
+  <rect x="350" y="220" width="80" height="20" rx="4" fill="#c45c26" opacity="0.2"/>
+  <text x="358" y="234" font-family="sans-serif" font-size="9" fill="#9a4719">25 min</text>
+</svg>
