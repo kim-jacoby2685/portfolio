@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Case Study: Accessible Parks Search for Iowa — a searchable web application for discovering accessible parks and outdoor recreation areas in Iowa.">
+  <meta name="description" content="Case Study: Accessible Parks Search for Iowa — Park Explorer, a WCAG 2.2 AA web app for discovering Iowa parks by amenities and accessibility features.">
   <title>Accessible Parks Search for Iowa | Kim Jacoby</title>
   <link rel="stylesheet" href="../css/styles.css">
 </head>
@@ -32,62 +32,151 @@
 
     <h1>Accessible Parks Search for Iowa</h1>
 
-    <figure class="screenshot-placeholder">
-      <div class="placeholder-box" aria-hidden="true">Screenshot Placeholder</div>
-      <figcaption>Project screenshot coming soon.</figcaption>
+    <ul class="project-meta" aria-label="Project details">
+      <li><strong>Product</strong> Park Explorer</li>
+      <li><strong>Role</strong> UX design and accessibility</li>
+      <li><strong>Standard</strong> WCAG 2.2 Level AA</li>
+      <li><strong>Region</strong> Iowa state parks</li>
+    </ul>
+
+    <figure>
+      <img
+        class="project-hero-image"
+        src="../images/project-parks.svg"
+        alt="Preview of the Park Explorer interface showing a map with park markers, a search bar, and accessibility filter tags"
+        width="640"
+        height="360"
+      >
+      <figcaption>Park Explorer home screen — search, map, and accessibility filters in one view.</figcaption>
     </figure>
 
     <section class="content-section" aria-labelledby="overview-heading">
       <h2 id="overview-heading">Overview</h2>
       <p>
-        A searchable web application that helps users locate parks and outdoor recreation areas
-        based on accessibility features.
+        <a href="https://park-explorer.netlify.app/">Park Explorer</a> is a public, accessible website
+        that helps people find parks across Iowa, explore amenities, and understand accessibility
+        features before they visit. Whether you are looking for playgrounds, paved trails, accessible
+        restrooms, or sensory-friendly spaces, the app makes it simple to discover parks that fit
+        your needs.
       </p>
+      <p class="text-muted">
+        The live demo tagline: “Discover Local Parks — find parks across Iowa, filter by amenities
+        and accessibility features, and plan your next outdoor visit.”
+      </p>
+    </section>
+
+    <section class="content-section" aria-labelledby="demo-heading">
+      <h2 id="demo-heading">Try the Live Demo</h2>
+      <p>
+        Explore the working application on Netlify. The home page includes keyword search, featured
+        parks, and quick filters by amenity. The parks directory adds multi-select filters for both
+        general amenities and accessibility-specific features.
+      </p>
+      <div class="btn-group">
+        <a
+          class="btn btn-primary"
+          href="https://park-explorer.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >View Park Explorer<span class="visually-hidden"> (opens in new tab)</span></a>
+        <a
+          class="btn btn-secondary"
+          href="https://park-explorer.netlify.app/parks"
+          target="_blank"
+          rel="noopener noreferrer"
+        >Browse All Parks<span class="visually-hidden"> (opens in new tab)</span></a>
+      </div>
     </section>
 
     <section class="content-section" aria-labelledby="problem-heading">
       <h2 id="problem-heading">Problem</h2>
       <p>
         Accessibility information for parks is often difficult to locate across multiple websites
-        and resources.
+        and resources. Visitors may not know whether a park offers paved pathways, accessible
+        restrooms, or adaptive play equipment until they arrive.
       </p>
     </section>
 
     <section class="content-section" aria-labelledby="solution-heading">
       <h2 id="solution-heading">Solution</h2>
       <p>
-        Create a centralized search experience where users can discover accessible outdoor spaces
-        throughout Iowa.
+        I designed Park Explorer as a centralized search experience where users can discover
+        outdoor spaces throughout Iowa, filter by the features that matter to them, and review
+        accessibility details before planning a visit.
       </p>
     </section>
 
     <section class="content-section" aria-labelledby="features-heading">
       <h2 id="features-heading">Key Features</h2>
       <ul>
-        <li>Search parks by accessibility feature</li>
-        <li>Filterable listings of parks and recreation areas</li>
-        <li>Centralized accessibility information in one location</li>
-        <li>Keyboard-accessible search and results interface</li>
+        <li>Keyword search for parks by name or topic</li>
+        <li>Featured parks on the home page with amenity and accessibility summaries</li>
+        <li>Browse-by-amenity shortcuts (trails, restrooms, playgrounds, accessible paths, and more)</li>
+        <li>Multi-select filters on the parks directory for amenities and accessibility features</li>
+        <li>Accessibility filters including wheelchair access, paved pathways, accessible parking and restrooms, adaptive play equipment, sensory-friendly areas, and shaded seating</li>
+        <li>Keyboard-accessible search, filters, and navigation throughout the app</li>
+        <li>Design-token system enforcing contrast, focus indicators, and 44px touch targets</li>
       </ul>
+    </section>
+
+    <section class="content-section" aria-labelledby="featured-parks-heading">
+      <h2 id="featured-parks-heading">Featured Parks in the Demo</h2>
+      <p>The live app highlights Iowa state parks such as:</p>
+      <ul class="feature-list" aria-label="Featured parks in Park Explorer">
+        <li>
+          <h3>Backbone State Park</h3>
+          <p>Strawberry Point, IA — trails, restrooms, picnic areas, and three accessibility features.</p>
+        </li>
+        <li>
+          <h3>Ledges State Park</h3>
+          <p>Madrid, IA — trails, restrooms, picnic areas, and two accessibility features.</p>
+        </li>
+        <li>
+          <h3>Maquoketa Caves State Park</h3>
+          <p>Maquoketa, IA — trails, restrooms, picnic areas, and three accessibility features.</p>
+        </li>
+        <li>
+          <h3>Pikes Peak State Park</h3>
+          <p>McGregor, IA — trails, restrooms, picnic areas, and three accessibility features.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="content-section" aria-labelledby="accessibility-heading">
+      <h2 id="accessibility-heading">Accessibility Approach</h2>
+      <p>
+        Park Explorer is built to meet WCAG 2.2 Level AA. The project uses a token-based design
+        system for consistent contrast, visible focus rings, scroll margins that keep focused
+        controls clear of the sticky navigation, and reduced-motion support. Status is never
+        conveyed by color alone.
+      </p>
+      <p>
+        <a
+          href="https://park-explorer.netlify.app/accessibility"
+          target="_blank"
+          rel="noopener noreferrer"
+        >Read the Park Explorer accessibility statement<span class="visually-hidden"> (opens in new tab)</span></a>
+      </p>
     </section>
 
     <section class="content-section" aria-labelledby="technologies-heading">
       <h2 id="technologies-heading">Technologies Used</h2>
       <ul class="tech-list" aria-label="Technologies used">
-        <li><span class="tag">HTML</span></li>
-        <li><span class="tag">CSS</span></li>
+        <li><span class="tag">React</span></li>
         <li><span class="tag">JavaScript</span></li>
-        <li><span class="tag">Generative AI</span></li>
+        <li><span class="tag">CSS</span></li>
+        <li><span class="tag">Design Tokens</span></li>
+        <li><span class="tag">WCAG 2.2</span></li>
       </ul>
     </section>
 
     <section class="content-section" aria-labelledby="learned-heading">
       <h2 id="learned-heading">What I Learned</h2>
       <ul>
-        <li>Accessibility-first design</li>
-        <li>Information architecture</li>
-        <li>Search experience design</li>
-        <li>User-centered design</li>
+        <li>Accessibility-first design with a token system that encodes WCAG requirements</li>
+        <li>Information architecture for amenity and accessibility metadata</li>
+        <li>Search and filter experience design for diverse visitor needs</li>
+        <li>Documenting conformance with a dedicated accessibility statement</li>
       </ul>
     </section>
 
@@ -98,13 +187,19 @@
         <li>User-submitted accessibility reviews and photos</li>
         <li>Offline access for users in areas with limited connectivity</li>
         <li>Expanded coverage beyond Iowa state parks</li>
+        <li>Accessible alternatives for third-party map embeds and linked PDFs</li>
       </ul>
     </section>
 
     <section class="content-section" aria-labelledby="project-links-heading">
       <h2 id="project-links-heading">Project Links</h2>
       <p class="project-links">
-        <span class="project-link-placeholder">Live Demo Placeholder</span>
+        <a
+          class="btn btn-primary"
+          href="https://park-explorer.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >Live Demo<span class="visually-hidden">: Park Explorer (opens in new tab)</span></a>
         <span class="project-link-placeholder">GitHub Repository Placeholder</span>
       </p>
     </section>
