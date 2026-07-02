@@ -142,6 +142,21 @@
       </ul>
     </section>
 
+    <section class="content-section" aria-labelledby="iteration-heading">
+      <h2 id="iteration-heading">Design Iteration</h2>
+      <p>
+        During a course design review, Professor Aaron Yang noted that the park detail page stacked
+        About, Amenities, Accessibility, and Hours as separate full-width cards, which required
+        excessive scrolling before visitors could reach the map and directions.
+      </p>
+      <p>
+        I refactored those blocks into a single compact container with two multi-column rows:
+        About and Hours on the first row, Amenities and Accessibility on the second. On smaller
+        screens the layout stacks to one column while preserving semantic headings, WCAG 2.2 AA
+        contrast and focus styles, and 44px touch targets on interactive elements.
+      </p>
+    </section>
+
     <section class="content-section" aria-labelledby="accessibility-heading">
       <h2 id="accessibility-heading">Accessibility Approach</h2>
       <p>
@@ -176,6 +191,7 @@
         <li>Accessibility-first design with a token system that encodes WCAG requirements</li>
         <li>Information architecture for amenity and accessibility metadata</li>
         <li>Search and filter experience design for diverse visitor needs</li>
+        <li>Iterating on information density from professor feedback without sacrificing accessibility</li>
         <li>Documenting conformance with a dedicated accessibility statement</li>
       </ul>
     </section>

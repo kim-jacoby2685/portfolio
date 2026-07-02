@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Case Study: AI Recipe Search — a web application for discovering recipes based on ingredients and dietary preferences.">
+  <meta name="description" content="Case Study: AI Recipe Search — Recipe Finder, an accessible web app for searching 26 recipes across 12 categories with favorites and detailed instructions.">
   <title>AI Recipe Search | Kim Jacoby</title>
   <link rel="stylesheet" href="../css/styles.css">
 </head>
@@ -32,42 +32,123 @@
 
     <h1>AI Recipe Search</h1>
 
-    <figure class="screenshot-placeholder">
-      <div class="placeholder-box" aria-hidden="true">Screenshot Placeholder</div>
-      <figcaption>Project screenshot coming soon.</figcaption>
+    <ul class="project-meta" aria-label="Project details">
+      <li><strong>Product</strong> Recipe Finder</li>
+      <li><strong>Role</strong> UX design and front-end development</li>
+      <li><strong>Collection</strong> 26 recipes, 12 categories</li>
+      <li><strong>Focus</strong> Accessible search and discovery</li>
+    </ul>
+
+    <figure>
+      <img
+        class="project-hero-image"
+        src="../images/project-recipe.svg"
+        alt="Preview of the Recipe Finder interface with ingredient search and recipe result cards"
+        width="640"
+        height="360"
+      >
+      <figcaption>Recipe Finder home screen — search, category shortcuts, and favorites access.</figcaption>
     </figure>
 
     <section class="content-section" aria-labelledby="overview-heading">
       <h2 id="overview-heading">Overview</h2>
       <p>
-        A web application that helps users discover recipes based on ingredients and dietary
-        preferences.
+        <a href="https://kim-assignment4.netlify.app/">Recipe Finder</a> is an accessible web
+        application that helps users discover wholesome recipes for everyday life. Search by recipe
+        name, ingredient, or category, then browse detailed instructions, ingredients, and prep
+        times for each dish.
       </p>
+      <p class="text-muted">
+        The live demo tagline: “Find your next favorite meal — search 12 categories and 26 wholesome
+        recipes inspired by fresh, minimal food blogs.”
+      </p>
+    </section>
+
+    <section class="content-section" aria-labelledby="demo-heading">
+      <h2 id="demo-heading">Try the Live Demo</h2>
+      <p>
+        Explore the working application on Netlify. The home page offers keyword search and quick
+        category shortcuts. The all-recipes view adds filter chips for every category, and each
+        recipe opens a detail page with ingredients, step-by-step instructions, and favorites.
+      </p>
+      <div class="btn-group">
+        <a
+          class="btn btn-primary"
+          href="https://kim-assignment4.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >View Recipe Finder<span class="visually-hidden"> (opens in new tab)</span></a>
+        <a
+          class="btn btn-secondary"
+          href="https://kim-assignment4.netlify.app/search"
+          target="_blank"
+          rel="noopener noreferrer"
+        >Browse All Recipes<span class="visually-hidden"> (opens in new tab)</span></a>
+      </div>
     </section>
 
     <section class="content-section" aria-labelledby="problem-heading">
       <h2 id="problem-heading">Problem</h2>
       <p>
         Users often struggle to determine what meals they can prepare using ingredients already
-        available.
+        available, or to find recipes that match dietary preferences without wading through cluttered
+        recipe sites.
       </p>
     </section>
 
     <section class="content-section" aria-labelledby="solution-heading">
       <h2 id="solution-heading">Solution</h2>
       <p>
-        Allow users to search and explore recipe options quickly and efficiently.
+        I designed Recipe Finder as a focused search experience where users can filter by keyword or
+        category, review clear recipe cards, and save favorites for later — all in an interface
+        built for accessible navigation across devices.
       </p>
     </section>
 
     <section class="content-section" aria-labelledby="features-heading">
       <h2 id="features-heading">Key Features</h2>
       <ul>
-        <li>Ingredient-based recipe search</li>
-        <li>Dietary preference filtering</li>
-        <li>AI-powered recipe discovery and suggestions</li>
-        <li>Quick exploration of meal options</li>
+        <li>Keyword search across recipe titles, descriptions, categories, and ingredients</li>
+        <li>12 browse categories including Pasta, Chicken, Vegetarian, Vegan, Desserts, Bowls, Soup, and Quick &amp; Easy</li>
+        <li>Category filter chips with pressed-state feedback on the search results page</li>
+        <li>Recipe detail pages with prep time, cook time, servings, ingredients, and numbered instructions</li>
+        <li>Favorites saved in local storage with a dedicated favorites view</li>
+        <li>URL-based search and category routing (for example, <code>/search?category=Vegetarian</code>)</li>
+        <li>Semantic landmarks, labeled search controls, and keyboard-accessible navigation</li>
       </ul>
+    </section>
+
+    <section class="content-section" aria-labelledby="categories-heading">
+      <h2 id="categories-heading">Recipe Categories in the Demo</h2>
+      <p>The live app organizes 26 recipes across categories such as:</p>
+      <ul class="feature-list" aria-label="Recipe categories in Recipe Finder">
+        <li>
+          <h3>Vegetarian &amp; Vegan</h3>
+          <p>17 vegetarian recipes including Buddha bowls, lentil soup, and zucchini noodle pad thai.</p>
+        </li>
+        <li>
+          <h3>Pasta &amp; Quick Meals</h3>
+          <p>Classic carbonara, lemon ricotta pasta, and weeknight-friendly options.</p>
+        </li>
+        <li>
+          <h3>Salads, Bowls &amp; Breakfast</h3>
+          <p>Grilled chicken salad, nourish bowls, avocado toast, and banana oat pancakes.</p>
+        </li>
+        <li>
+          <h3>Desserts &amp; Snacks</h3>
+          <p>Sweet and snackable recipes alongside savory mains for flexible meal planning.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="content-section" aria-labelledby="accessibility-heading">
+      <h2 id="accessibility-heading">Accessibility Approach</h2>
+      <p>
+        Recipe Finder was built with an accessible, user-friendly interface designed for clear
+        navigation and inclusive use across devices. Search fields, category filters, and recipe
+        regions use descriptive labels, and recipe detail pages separate ingredients and instructions
+        into distinct landmark regions.
+      </p>
     </section>
 
     <section class="content-section" aria-labelledby="technologies-heading">
@@ -76,17 +157,17 @@
         <li><span class="tag">HTML</span></li>
         <li><span class="tag">CSS</span></li>
         <li><span class="tag">JavaScript</span></li>
-        <li><span class="tag">Generative AI</span></li>
+        <li><span class="tag">localStorage</span></li>
       </ul>
     </section>
 
     <section class="content-section" aria-labelledby="learned-heading">
       <h2 id="learned-heading">What I Learned</h2>
       <ul>
-        <li>Search interface design</li>
-        <li>User input design</li>
-        <li>AI integration</li>
-        <li>Content organization</li>
+        <li>Search interface design for ingredient and category discovery</li>
+        <li>Client-side filtering across structured recipe metadata</li>
+        <li>Persistent favorites without a backend</li>
+        <li>Accessible recipe detail layouts with clear reading order</li>
       </ul>
     </section>
 
@@ -95,7 +176,7 @@
       <ul>
         <li>Meal planning and shopping list generation</li>
         <li>Nutritional information for recipes</li>
-        <li>Save and share favorite recipes</li>
+        <li>Save and share favorite recipes across devices</li>
         <li>Voice input for hands-free ingredient entry</li>
       </ul>
     </section>
@@ -103,8 +184,12 @@
     <section class="content-section" aria-labelledby="project-links-heading">
       <h2 id="project-links-heading">Project Links</h2>
       <p class="project-links">
-        <span class="project-link-placeholder">Live Demo Placeholder</span>
-        <span class="project-link-placeholder">GitHub Repository Placeholder</span>
+        <a
+          class="btn btn-primary"
+          href="https://kim-assignment4.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >Live Demo<span class="visually-hidden">: Recipe Finder (opens in new tab)</span></a>
       </p>
     </section>
 

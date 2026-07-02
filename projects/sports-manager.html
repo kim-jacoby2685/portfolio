@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Case Study: Youth Sports Team Manager — a team management platform for youth baseball coaches, players, and parents.">
+  <meta name="description" content="Case Study: Youth Sports Team Manager — CIS OBL portal for youth baseball coaches and parents to manage rosters, schedules, and attendance.">
   <title>Youth Sports Team Manager | Kim Jacoby</title>
   <link rel="stylesheet" href="../css/styles.css">
 </head>
@@ -32,49 +32,125 @@
 
     <h1>Youth Sports Team Manager</h1>
 
-    <figure class="screenshot-placeholder">
-      <div class="placeholder-box" aria-hidden="true">Screenshot Placeholder</div>
-      <figcaption>Project screenshot coming soon.</figcaption>
+    <ul class="project-meta" aria-label="Project details">
+      <li><strong>Product</strong> CIS OBL Team Portal</li>
+      <li><strong>Role</strong> UX design and front-end development</li>
+      <li><strong>League</strong> Central Iowa Sports Open Baseball League</li>
+      <li><strong>Location</strong> Holiday Park, West Des Moines, Iowa</li>
+    </ul>
+
+    <figure>
+      <img
+        class="project-hero-image"
+        src="../images/project-sports.svg"
+        alt="Preview of the Youth Sports Team Manager dashboard with roster list and practice schedule"
+        width="640"
+        height="360"
+      >
+      <figcaption>CIS OBL portal — separate coach and parent dashboards for team management.</figcaption>
     </figure>
 
     <section class="content-section" aria-labelledby="overview-heading">
       <h2 id="overview-heading">Overview</h2>
       <p>
-        A team management platform that helps youth baseball coaches, players, and parents manage
-        schedules, attendance, and communication.
+        The <a href="https://kim-assignment2.netlify.app/">Central Iowa Sports (CIS) Open Baseball
+        League (OBL)</a> portal is a team management application for youth baseball coaches and
+        parents. Coaches schedule practices and games, manage rosters, and track scores. Parents view
+        their children’s teams and mark attendance for practices and games.
       </p>
+      <p class="text-muted">
+        The live demo includes coach and parent sign-in flows with demo accounts, plus role-based
+        dashboards for the CIS OBL Tigers and CIS OBL Hawks.
+      </p>
+    </section>
+
+    <section class="content-section" aria-labelledby="demo-heading">
+      <h2 id="demo-heading">Try the Live Demo</h2>
+      <p>
+        Explore the working application on Netlify. Sign in as a coach to schedule practices, enter
+        game scores, and manage the roster — or sign in as a parent to view your children and mark
+        attendance. Demo account credentials are listed on the sign-in page.
+      </p>
+      <div class="btn-group">
+        <a
+          class="btn btn-primary"
+          href="https://kim-assignment2.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >View CIS OBL Portal<span class="visually-hidden"> (opens in new tab)</span></a>
+        <a
+          class="btn btn-secondary"
+          href="https://kim-assignment2.netlify.app/forgot-password.html"
+          target="_blank"
+          rel="noopener noreferrer"
+        >Forgot Password Flow<span class="visually-hidden"> (opens in new tab)</span></a>
+      </div>
     </section>
 
     <section class="content-section" aria-labelledby="problem-heading">
       <h2 id="problem-heading">Problem</h2>
       <p>
         Coaches often manage team information using spreadsheets, emails, texts, and multiple
-        disconnected tools.
+        disconnected tools. Parents lack a single place to see schedules, confirm attendance, or
+        report when a player is absent or injured.
       </p>
     </section>
 
     <section class="content-section" aria-labelledby="solution-heading">
       <h2 id="solution-heading">Solution</h2>
       <p>
-        Create a centralized application where coaches can manage teams and parents can track
-        attendance and player status.
+        I designed a centralized league portal with separate coach and parent experiences. Coaches
+        manage teams, rosters, and schedules from a dashboard with quick links to every workflow.
+        Parents see their linked children and can mark attendance directly from practice and game
+        listings.
       </p>
     </section>
 
     <section class="content-section" aria-labelledby="features-heading">
       <h2 id="features-heading">Key Features</h2>
       <ul>
-        <li>Coach login</li>
-        <li>Parent login</li>
-        <li>Team creation</li>
-        <li>Player roster management</li>
-        <li>Parent contact management</li>
-        <li>Practice scheduling</li>
-        <li>Game scheduling</li>
-        <li>Attendance tracking</li>
-        <li>Injury reporting</li>
-        <li>Absence reporting</li>
+        <li>Coach and parent sign-in with role-based dashboards</li>
+        <li>Coach dashboard with team summary, practice scheduling, game scores, and roster management</li>
+        <li>Team creation with player and parent invite workflows</li>
+        <li>Roster management — add players with jersey number, position, and linked parent accounts</li>
+        <li>Practice scheduling with date, time, field, location, and notes</li>
+        <li>Game schedule with score entry for coaches</li>
+        <li>Parent attendance marking for practices and games (attending, absent, or injured)</li>
+        <li>Parent dashboard for viewing children, attendance shortcuts, and second-adult management</li>
+        <li>Forgot-password flow and accessible live regions for status updates</li>
       </ul>
+    </section>
+
+    <section class="content-section" aria-labelledby="roles-heading">
+      <h2 id="roles-heading">Coach and Parent Experiences</h2>
+      <ul class="feature-list" aria-label="Role-based experiences in CIS OBL portal">
+        <li>
+          <h3>Coach portal</h3>
+          <p>Schedule practices at Holiday Park, enter game scores, manage the team roster, and create new teams with parent invites.</p>
+        </li>
+        <li>
+          <h3>Parent portal</h3>
+          <p>View linked children, mark practice and game attendance, and add second adults for notifications or shared account access.</p>
+        </li>
+        <li>
+          <h3>Shared navigation</h3>
+          <p>Dashboard, Practices, Games, and Roster pages adapt to the signed-in role while keeping a consistent league header and sign-out action.</p>
+        </li>
+        <li>
+          <h3>Demo teams</h3>
+          <p>CIS OBL Tigers and CIS OBL Hawks with sample players, practices, and attendance records seeded for exploration.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="content-section" aria-labelledby="accessibility-heading">
+      <h2 id="accessibility-heading">Accessibility Approach</h2>
+      <p>
+        The portal includes skip links, semantic landmarks, labeled forms, and dedicated
+        <code>aria-live</code> status and alert regions. Attendance buttons use
+        <code>aria-pressed</code> for state, roster tables include captions and column headers, and
+        interactive controls target at least 44px touch height on parent-facing screens.
+      </p>
     </section>
 
     <section class="content-section" aria-labelledby="technologies-heading">
@@ -83,18 +159,17 @@
         <li><span class="tag">HTML</span></li>
         <li><span class="tag">CSS</span></li>
         <li><span class="tag">JavaScript</span></li>
-        <li><span class="tag">Generative AI</span></li>
+        <li><span class="tag">localStorage</span></li>
       </ul>
     </section>
 
     <section class="content-section" aria-labelledby="learned-heading">
       <h2 id="learned-heading">What I Learned</h2>
       <ul>
-        <li>User roles and permissions</li>
-        <li>Dashboard design</li>
-        <li>Scheduling workflows</li>
-        <li>Information architecture</li>
-        <li>User-centered design</li>
+        <li>Designing distinct coach and parent workflows within one application</li>
+        <li>Dashboard information architecture with quick-link tiles</li>
+        <li>Scheduling and attendance interaction patterns for volunteer-run leagues</li>
+        <li>Accessible form design and live status feedback for data-entry tasks</li>
       </ul>
     </section>
 
@@ -111,8 +186,12 @@
     <section class="content-section" aria-labelledby="project-links-heading">
       <h2 id="project-links-heading">Project Links</h2>
       <p class="project-links">
-        <span class="project-link-placeholder">Live Demo Placeholder</span>
-        <span class="project-link-placeholder">GitHub Repository Placeholder</span>
+        <a
+          class="btn btn-primary"
+          href="https://kim-assignment2.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >Live Demo<span class="visually-hidden">: CIS OBL Portal (opens in new tab)</span></a>
       </p>
     </section>
 
