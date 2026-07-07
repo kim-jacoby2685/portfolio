@@ -21,7 +21,6 @@
           <li><a href="../index.html">Home</a></li>
           <li><a href="../about.html">About</a></li>
           <li><a href="../contact.html">Contact</a></li>
-          <li><a href="../accessibility.html">Accessibility Statement</a></li>
         </ul>
       </nav>
     </div>
@@ -38,6 +37,17 @@
       <li><strong>Standard</strong> WCAG 2.2 Level AA</li>
       <li><strong>Region</strong> Iowa state parks</li>
     </ul>
+
+    <section class="content-section" aria-labelledby="technologies-heading">
+      <h2 id="technologies-heading">Technologies Used</h2>
+      <ul class="tech-list" aria-label="Technologies used">
+        <li><span class="tag">React</span></li>
+        <li><span class="tag">JavaScript</span></li>
+        <li><span class="tag">CSS</span></li>
+        <li><span class="tag">Design Tokens</span></li>
+        <li><span class="tag">WCAG 2.2</span></li>
+      </ul>
+    </section>
 
     <figure>
       <img
@@ -79,12 +89,6 @@
           target="_blank"
           rel="noopener noreferrer"
         >View Park Explorer<span class="visually-hidden"> (opens in new tab)</span></a>
-        <a
-          class="btn btn-secondary"
-          href="https://park-explorer.netlify.app/parks"
-          target="_blank"
-          rel="noopener noreferrer"
-        >Browse All Parks<span class="visually-hidden"> (opens in new tab)</span></a>
       </div>
     </section>
 
@@ -145,9 +149,9 @@
     <section class="content-section" aria-labelledby="iteration-heading">
       <h2 id="iteration-heading">Design Iteration</h2>
       <p>
-        During a course design review, Professor Aaron Yang noted that the park detail page stacked
-        About, Amenities, Accessibility, and Hours as separate full-width cards, which required
-        excessive scrolling before visitors could reach the map and directions.
+        An early version of the park detail page stacked About, Amenities, Accessibility, and Hours
+        as separate full-width cards, which required excessive scrolling before visitors could reach
+        the map and directions.
       </p>
       <p>
         I refactored those blocks into a single compact container with two multi-column rows:
@@ -156,9 +160,9 @@
         contrast and focus styles, and 44px touch targets on interactive elements.
       </p>
       <p>
-        A follow-up review of the All Parks page noted that the filter sidebar consumed too much
-        space on mobile. I hid filters behind a toggle button with a hamburger icon (similar to
-        retail filter patterns), opening a slide-in panel with <code>aria-expanded</code>,
+        A later pass on the All Parks page addressed a filter sidebar that consumed too much space
+        on mobile. I hid the filters behind a toggle button with a hamburger icon (a familiar
+        retail filter pattern), opening a slide-in panel with <code>aria-expanded</code>,
         backdrop dismiss, Escape key support, and a visible Close control.
       </p>
     </section>
@@ -180,24 +184,13 @@
       </p>
     </section>
 
-    <section class="content-section" aria-labelledby="technologies-heading">
-      <h2 id="technologies-heading">Technologies Used</h2>
-      <ul class="tech-list" aria-label="Technologies used">
-        <li><span class="tag">React</span></li>
-        <li><span class="tag">JavaScript</span></li>
-        <li><span class="tag">CSS</span></li>
-        <li><span class="tag">Design Tokens</span></li>
-        <li><span class="tag">WCAG 2.2</span></li>
-      </ul>
-    </section>
-
     <section class="content-section" aria-labelledby="learned-heading">
       <h2 id="learned-heading">What I Learned</h2>
       <ul>
         <li>Accessibility-first design with a token system that encodes WCAG requirements</li>
         <li>Information architecture for amenity and accessibility metadata</li>
         <li>Search and filter experience design for diverse visitor needs</li>
-        <li>Iterating on information density from professor feedback without sacrificing accessibility</li>
+        <li>Iterating on information density from usability feedback without sacrificing accessibility</li>
         <li>Documenting conformance with a dedicated accessibility statement</li>
       </ul>
     </section>
@@ -227,8 +220,8 @@
     </section>
 
     <div class="case-study-actions" role="group" aria-label="Project navigation">
-      <a class="btn btn-secondary" href="../index.html#featured-projects">View All Projects</a>
-      <a class="btn btn-primary" href="../contact.html">Discuss a Similar Project</a>
+      <a href="../index.html#featured-projects">View All Projects</a>
+      <a href="../contact.html">Discuss a Similar Project</a>
     </div>
   </main>
 
