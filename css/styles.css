@@ -137,8 +137,10 @@ svg {
   scroll-margin-bottom: var(--space-md);
 }
 
-main:focus {
-  outline: none;
+main:focus,
+main:focus:not(:focus-visible) {
+  outline: var(--focus-outline-width) solid var(--focus-outline-color);
+  outline-offset: var(--focus-outline-offset);
 }
 
 /* --------------------------------------------------------------------------

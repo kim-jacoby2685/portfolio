@@ -21,6 +21,15 @@
       toggle.setAttribute('aria-expanded', String(isOpen));
       toggle.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
       nav.classList.toggle('is-open', isOpen);
+
+      const main = document.getElementById('main-content');
+      const footer = document.querySelector('.site-footer');
+      if (main) {
+        main.inert = isOpen;
+      }
+      if (footer) {
+        footer.inert = isOpen;
+      }
     }
 
     toggle.addEventListener('click', function () {
