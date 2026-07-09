@@ -29,25 +29,32 @@
   <main id="main-content" tabindex="-1">
     <a class="back-link" href="../index.html#featured-projects">&larr; Back to Projects</a>
 
+    <p class="case-study-eyebrow" aria-label="Project category">
+      <span class="tag">UX Design</span>
+      <span class="tag">Web App</span>
+      <span class="tag">Accessibility</span>
+    </p>
+
     <h1>Accessible Parks Search for Iowa</h1>
 
+    <p class="case-study-lede">
+      An accessible directory that helps visitors discover Iowa parks, filter by amenities and
+      accessibility features, and plan visits with confidence before they arrive.
+    </p>
+
     <ul class="project-meta" aria-label="Project details">
-      <li><strong>Product</strong> Park Explorer</li>
       <li><strong>Role</strong> UX design and accessibility</li>
-      <li><strong>Standard</strong> WCAG 2.2 Level AA</li>
-      <li><strong>Region</strong> Iowa state parks</li>
+      <li><strong>Timeline</strong> 2026</li>
+      <li><strong>Tools</strong> Figma, Cursor, React, CSS, Netlify</li>
+      <li><strong>Team</strong> Solo</li>
     </ul>
 
-    <section class="content-section" aria-labelledby="technologies-heading">
-      <h2 id="technologies-heading">Technologies Used</h2>
-      <ul class="tech-list" aria-label="Technologies used">
-        <li><span class="tag">React</span></li>
-        <li><span class="tag">JavaScript</span></li>
-        <li><span class="tag">CSS</span></li>
-        <li><span class="tag">Design Tokens</span></li>
-        <li><span class="tag">WCAG 2.2</span></li>
-      </ul>
-    </section>
+    <p>
+      Park information for Iowa state parks is spread across agency sites, PDFs, and third-party
+      listings — and accessibility details are especially hard to find. I designed
+      <a href="https://park-explorer.netlify.app/">Park Explorer</a> to bring search, filtering,
+      and accessibility metadata into one WCAG 2.2 AA experience.
+    </p>
 
     <figure>
       <img
@@ -58,175 +65,270 @@
         height="800"
         loading="lazy"
       >
-      <figcaption>Park Explorer home screen — search, featured parks, and accessibility filters in one view.</figcaption>
+      <figcaption>Park Explorer home screen — search, featured parks, and quick discovery.</figcaption>
     </figure>
 
-    <section class="content-section" aria-labelledby="overview-heading">
-      <h2 id="overview-heading">Overview</h2>
+    <div class="btn-group">
+      <a
+        class="btn btn-primary"
+        href="https://park-explorer.netlify.app/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >View live demo<span class="visually-hidden"> (opens in new tab)</span></a>
+      <a
+        class="btn btn-secondary"
+        href="https://park-explorer.netlify.app/accessibility"
+        target="_blank"
+        rel="noopener noreferrer"
+      >Accessibility statement<span class="visually-hidden"> (opens in new tab)</span></a>
+    </div>
+
+    <section class="content-section" aria-labelledby="challenge-heading">
+      <h2 id="challenge-heading">Challenge</h2>
       <p>
-        <a href="https://park-explorer.netlify.app/">Park Explorer</a> is a public, accessible website
-        that helps people find parks across Iowa, explore amenities, and understand accessibility
-        features before they visit. Whether you are looking for playgrounds, paved trails, accessible
-        restrooms, or sensory-friendly spaces, the app makes it simple to discover parks that fit
-        your needs.
+        Visitors planning outdoor trips often cannot tell whether a park offers paved pathways,
+        accessible restrooms, adaptive play equipment, or sensory-friendly areas until they arrive.
+        Existing resources require checking multiple websites, and filter tools rarely treat
+        accessibility as first-class metadata.
       </p>
-      <p class="text-muted">
-        The live demo tagline: “Discover Local Parks — find parks across Iowa, filter by amenities
-        and accessibility features, and plan your next outdoor visit.”
+      <p>
+        My goal was to reduce that uncertainty with a searchable, filterable directory built for
+        keyboard and screen reader users — without sacrificing visual clarity on mobile.
       </p>
     </section>
 
-    <section class="content-section" aria-labelledby="demo-heading">
-      <h2 id="demo-heading">Try the Live Demo</h2>
+    <section class="content-section" aria-labelledby="process-heading">
+      <h2 id="process-heading">Process</h2>
       <p>
-        Explore the working application on Netlify. The home page includes keyword search, featured
-        parks, and quick filters by amenity. The parks directory adds multi-select filters for both
-        general amenities and accessibility-specific features.
+        The workflow moved from research and information architecture into visual exploration,
+        then into token-based design, React development, accessibility iteration, and deployment.
       </p>
-      <div class="btn-group">
-        <a
-          class="btn btn-primary"
-          href="https://park-explorer.netlify.app/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >View Park Explorer<span class="visually-hidden"> (opens in new tab)</span></a>
-      </div>
+      <ol class="process-track" aria-label="Design and development process">
+        <li>Research</li>
+        <li>IA &amp; wireframes</li>
+        <li>Visual style</li>
+        <li>Build &amp; iterate</li>
+        <li>Deploy</li>
+      </ol>
+      <ul class="process-substeps">
+        <li>Audit existing park resources and define amenity/accessibility metadata</li>
+        <li>Sketch and wireframe key flows in Figma</li>
+        <li>Establish color, type, and spacing tokens for WCAG 2.2 AA</li>
+        <li>Develop in React; refine detail layout and mobile filters from feedback</li>
+        <li>Publish on Netlify with a conformance accessibility statement</li>
+      </ul>
     </section>
 
-    <section class="content-section" aria-labelledby="problem-heading">
-      <h2 id="problem-heading">Problem</h2>
+    <section class="content-section" aria-labelledby="sketching-heading">
+      <h2 id="sketching-heading">Sketching</h2>
       <p>
-        Accessibility information for parks is often difficult to locate across multiple websites
-        and resources. Visitors may not know whether a park offers paved pathways, accessible
-        restrooms, or adaptive play equipment until they arrive.
-      </p>
-    </section>
-
-    <section class="content-section" aria-labelledby="solution-heading">
-      <h2 id="solution-heading">Solution</h2>
-      <p>
-        I designed Park Explorer as a centralized search experience where users can discover
-        outdoor spaces throughout Iowa, filter by the features that matter to them, and review
-        accessibility details before planning a visit.
+        Sketching helped me explore search, filter, and park-detail layouts quickly before moving
+        into high-fidelity screens. Early explorations focused on how visitors compare amenities
+        across parks and how much accessibility detail to surface on the card versus the detail page.
       </p>
       <figure>
         <img
           class="project-hero-image"
-          src="../images/parks-screenshot-filters.png"
-          alt="Park Explorer All Parks page showing filter sidebar with amenity and accessibility checkboxes and a grid of park cards"
-          width="2497"
-          height="1574"
+          src="../images/parks-sketch.png"
+          alt="Low-fidelity wireframes showing park list with search, search results with empty state, and park detail with map and directions"
+          width="1024"
+          height="682"
           loading="lazy"
         >
-        <figcaption>All Parks directory — multi-select amenity and accessibility filters with park cards.</figcaption>
+        <figcaption>Early wireframes — park list, search results, and detail page with map and directions.</figcaption>
       </figure>
+    </section>
+
+    <section class="content-section" aria-labelledby="style-heading">
+      <h2 id="style-heading">Visual Style Development</h2>
+      <p>
+        The visual direction emphasizes calm outdoor tones, high contrast for readability, and
+        consistent spacing for touch targets. My Figma design system documents direction, color,
+        typography, imagery, UI components, and accessibility principles in one reference.
+      </p>
       <figure>
         <img
-          class="project-hero-image"
-          src="../images/parks-screenshot-detail.png"
-          alt="Park Explorer detail page for Lake Macbride State Park showing hero image, status badges, and About, Hours, and Amenities sections"
-          width="2497"
-          height="1574"
+          class="design-system-image"
+          src="../images/parks-design-system.png"
+          alt="Park Explorer design system showing direction, forest green and sand color palette, typography, imagery, search and filter components, cards, forms, icons, and accessibility principles"
+          width="265"
+          height="1024"
           loading="lazy"
         >
-        <figcaption>Park detail page — compact layout with about, hours, amenities, and accessibility information.</figcaption>
+        <figcaption>Design system — direction, tokens, components, and accessibility principles.</figcaption>
       </figure>
-    </section>
-
-    <section class="content-section" aria-labelledby="features-heading">
-      <h2 id="features-heading">Key Features</h2>
-      <ul>
-        <li>Keyword search for parks by name or topic</li>
-        <li>Featured parks on the home page with amenity and accessibility summaries</li>
-        <li>Browse-by-amenity shortcuts (trails, restrooms, playgrounds, accessible paths, and more)</li>
-        <li>Multi-select filters on the parks directory for amenities and accessibility features</li>
-        <li>Accessibility filters including wheelchair access, paved pathways, accessible parking and restrooms, adaptive play equipment, sensory-friendly areas, and shaded seating</li>
-        <li>Keyboard-accessible search, filters, and navigation throughout the app</li>
-        <li>Design-token system enforcing contrast, focus indicators, and 44px touch targets</li>
-      </ul>
-    </section>
-
-    <section class="content-section" aria-labelledby="featured-parks-heading">
-      <h2 id="featured-parks-heading">Featured Parks in the Demo</h2>
-      <p>The live app highlights Iowa state parks such as:</p>
-      <ul class="feature-list" aria-label="Featured parks in Park Explorer">
-        <li>
-          <h3>Backbone State Park</h3>
-          <p>Strawberry Point, IA — trails, restrooms, picnic areas, and three accessibility features.</p>
-        </li>
-        <li>
-          <h3>Ledges State Park</h3>
-          <p>Madrid, IA — trails, restrooms, picnic areas, and two accessibility features.</p>
-        </li>
-        <li>
-          <h3>Maquoketa Caves State Park</h3>
-          <p>Maquoketa, IA — trails, restrooms, picnic areas, and three accessibility features.</p>
-        </li>
-        <li>
-          <h3>Pikes Peak State Park</h3>
-          <p>McGregor, IA — trails, restrooms, picnic areas, and three accessibility features.</p>
-        </li>
-      </ul>
     </section>
 
     <section class="content-section" aria-labelledby="iteration-heading">
       <h2 id="iteration-heading">Design Iteration</h2>
       <p>
-        An early version of the park detail page stacked About, Amenities, Accessibility, and Hours
-        as separate full-width cards, which required excessive scrolling before visitors could reach
-        the map and directions.
+        Early high-fidelity screens explored a national-parks showcase and a persistent filter
+        sidebar. The shipped Iowa demo simplified discovery on the home page and moved mobile
+        filters into a slide-in panel while keeping the same amenity and accessibility metadata.
       </p>
       <p>
-        I refactored those blocks into a single compact container with two multi-column rows:
-        About and Hours on the first row, Amenities and Accessibility on the second. On smaller
-        screens the layout stacks to one column while preserving semantic headings, WCAG 2.2 AA
-        contrast and focus styles, and 44px touch targets on interactive elements.
+        On the park detail page, an early build stacked About, Amenities, Accessibility, and Hours
+        as separate full-width cards. I refactored those blocks into a compact two-row layout that
+        preserves semantic headings and 44px touch targets on smaller screens.
       </p>
-      <p>
-        A later pass on the All Parks page addressed a filter sidebar that consumed too much space
-        on mobile. I hid the filters behind a toggle button with a hamburger icon (a familiar
-        retail filter pattern), opening a slide-in panel with <code>aria-expanded</code>,
-        backdrop dismiss, Escape key support, and a visible Close control.
-      </p>
+
+      <h3>Home and featured parks</h3>
+      <div class="comparison-grid" aria-label="Home page before and after">
+        <figure>
+          <span class="comparison-label">Before</span>
+          <img
+            class="project-hero-image"
+            src="../images/parks-iteration-before-home.png"
+            alt="Earlier Figma concept for featured parks with filter chips and a large hero card for national parks"
+            width="1024"
+            height="789"
+            loading="lazy"
+          >
+          <figcaption>Featured parks grid — national park showcase with horizontal filter chips.</figcaption>
+        </figure>
+        <figure>
+          <span class="comparison-label">After</span>
+          <img
+            class="project-hero-image"
+            src="../images/parks-screenshot-home.png"
+            alt="Park Explorer home page with Iowa featured parks and search"
+            width="1280"
+            height="800"
+            loading="lazy"
+          >
+          <figcaption>Shipped home page — Iowa parks, search, and featured cards.</figcaption>
+        </figure>
+      </div>
+
+      <h3>Search and filters</h3>
+      <div class="comparison-grid" aria-label="Search and filters before and after">
+        <figure>
+          <span class="comparison-label">Before</span>
+          <img
+            class="project-hero-image"
+            src="../images/parks-iteration-before-filters.png"
+            alt="Earlier Figma concept with persistent left sidebar filters and California park search results"
+            width="1024"
+            height="598"
+            loading="lazy"
+          >
+          <figcaption>Persistent filter sidebar — amenities and state filters beside results.</figcaption>
+        </figure>
+        <figure>
+          <span class="comparison-label">After</span>
+          <img
+            class="project-hero-image"
+            src="../images/parks-screenshot-filters.png"
+            alt="Park Explorer All Parks page with filter panel and Iowa park cards"
+            width="2497"
+            height="1574"
+            loading="lazy"
+          >
+          <figcaption>Shipped All Parks view — mobile-friendly filters and Iowa park cards.</figcaption>
+        </figure>
+      </div>
+
+      <h3>Park detail layout</h3>
+      <div class="comparison-grid" aria-label="Park detail before and after">
+        <figure>
+          <span class="comparison-label">Before</span>
+          <div class="placeholder-box" role="img" aria-label="Stacked detail sections described in case study text">
+            Stacked About, Amenities, Accessibility, and Hours cards — high scroll before map
+          </div>
+          <figcaption>Separate full-width sections — excessive scrolling before directions.</figcaption>
+        </figure>
+        <figure>
+          <span class="comparison-label">After</span>
+          <img
+            class="project-hero-image"
+            src="../images/parks-screenshot-detail.png"
+            alt="Park Explorer detail page for Lake Macbride State Park with compact About, Hours, and Amenities layout"
+            width="2497"
+            height="1574"
+            loading="lazy"
+          >
+          <figcaption>Compact detail layout — related information grouped in fewer scrolls.</figcaption>
+        </figure>
+      </div>
     </section>
 
-    <section class="content-section" aria-labelledby="accessibility-heading">
-      <h2 id="accessibility-heading">Accessibility Approach</h2>
+    <section class="content-section" aria-labelledby="ai-heading">
+      <h2 id="ai-heading">AI-Assisted Development</h2>
       <p>
-        Park Explorer is built to meet WCAG 2.2 Level AA. The project uses a token-based design
-        system for consistent contrast, visible focus rings, scroll margins that keep focused
-        controls clear of the sticky navigation, and reduced-motion support. Status is never
-        conveyed by color alone.
+        Cursor supported rapid prototyping and refactors — especially the park detail layout and
+        mobile filter drawer — while I kept accessibility requirements explicit in each prompt.
       </p>
+      <div class="prompt-block">
+        <h3>Example prompt: compact park detail layout</h3>
+        <pre>Refactor the park detail page so About, Hours, Amenities, and Accessibility
+sit in a single compact card with two multi-column rows instead of four
+stacked full-width sections. Preserve WCAG 2.2 AA contrast, focus styles,
+semantic headings, and 44px touch targets. Stack to one column on mobile.</pre>
+      </div>
+    </section>
+
+    <section class="content-section" aria-labelledby="gallery-heading">
+      <h2 id="gallery-heading">Gallery</h2>
+      <p>Key screens from the shipped Park Explorer experience.</p>
+      <div class="gallery-grid">
+        <figure>
+          <img
+            class="project-hero-image"
+            src="../images/parks-screenshot-home.png"
+            alt="Park Explorer home page with search and featured park cards"
+            width="1280"
+            height="800"
+            loading="lazy"
+          >
+          <figcaption>Home — search and featured parks.</figcaption>
+        </figure>
+        <figure>
+          <img
+            class="project-hero-image"
+            src="../images/parks-screenshot-filters.png"
+            alt="Park Explorer All Parks page with amenity and accessibility filters"
+            width="2497"
+            height="1574"
+            loading="lazy"
+          >
+          <figcaption>All Parks — multi-select filters and park cards.</figcaption>
+        </figure>
+        <figure>
+          <img
+            class="project-hero-image"
+            src="../images/parks-screenshot-detail.png"
+            alt="Park Explorer detail page with park information sections"
+            width="2497"
+            height="1574"
+            loading="lazy"
+          >
+          <figcaption>Park detail — amenities, hours, and accessibility.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="content-section" aria-labelledby="deployment-heading">
+      <h2 id="deployment-heading">Deployment</h2>
       <p>
+        Park Explorer is live on Netlify as a public demo covering Iowa state parks with real
+        amenity and accessibility metadata, keyboard-accessible search and filters, and a dedicated
         <a
           href="https://park-explorer.netlify.app/accessibility"
           target="_blank"
           rel="noopener noreferrer"
-        >Read the Park Explorer accessibility statement<span class="visually-hidden"> (opens in new tab)</span></a>
+        >accessibility statement<span class="visually-hidden"> (opens in new tab)</span></a>.
       </p>
     </section>
 
-    <section class="content-section" aria-labelledby="learned-heading">
-      <h2 id="learned-heading">What I Learned</h2>
-      <ul>
-        <li>Accessibility-first design with a token system that encodes WCAG requirements</li>
-        <li>Information architecture for amenity and accessibility metadata</li>
-        <li>Search and filter experience design for diverse visitor needs</li>
-        <li>Iterating on information density from usability feedback without sacrificing accessibility</li>
-        <li>Documenting conformance with a dedicated accessibility statement</li>
-      </ul>
-    </section>
-
-    <section class="content-section" aria-labelledby="future-heading">
-      <h2 id="future-heading">Future Enhancements</h2>
-      <ul>
-        <li>Integration with real-time trail condition updates</li>
-        <li>User-submitted accessibility reviews and photos</li>
-        <li>Offline access for users in areas with limited connectivity</li>
-        <li>Expanded coverage beyond Iowa state parks</li>
-        <li>Accessible alternatives for third-party map embeds and linked PDFs</li>
-      </ul>
+    <section class="content-section" aria-labelledby="reflection-heading">
+      <h2 id="reflection-heading">Reflection</h2>
+      <p>
+        This project reinforced that accessibility metadata deserves the same information architecture
+        as amenities and hours — not a footnote buried on a separate page. The biggest lesson was
+        that reducing scroll and cognitive load on mobile matters as much as checkbox coverage for
+        screen readers. Next, I would test earlier with visitors who rely on mobility aids and
+        expand coverage beyond state park listings.
+      </p>
     </section>
 
     <div class="case-study-actions" role="group" aria-label="Project navigation">
